@@ -1,0 +1,882 @@
+$light_color: #242424;
+$light_background: white;
+$dark_color: #800000;
+$dark_background:#0d0000;
+$purple_color: #C71585;
+$purple_background:#301934;
+$green_color:#00FF7F;
+$green_background:#3AAFA9;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+.light {
+   
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    
+    .OutputMain {
+        height: 100vh;
+        background-color: rgba($color: $light_background, $alpha: 0.6);
+        .OutputPageHeader {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba($color: $light_background, $alpha: 0);
+            .Icon {
+                color: $light_color;
+                height: 100%;
+                width: 80px;
+            }
+            .Icon:hover {
+             animation: blur 2s;  
+             animation-fill-mode: forwards;         
+            }
+            .logo1 {
+                height: 10vh;
+                width: 30%;
+            }
+            .logo2 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo3 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo4 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $light_background, $alpha: 1);
+            height: 60%;
+            width: 40%;
+            margin: 10% 10% 0% 10%;
+            font-size: 150%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $light_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+            h2{
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 200%;
+                padding: 0% 0% 0% 3%;
+                margin-left: 0%;
+                margin-right: 0%;
+                margin-bottom: 0%;
+                color: $light_color;
+
+            }
+            h2:hover{
+               animation: glow 2s ;
+               animation-fill-mode: forwards;
+            }
+            p{
+                color: $light_color;
+                font-family: tahoma;
+                width: 90%;
+                font-size: 90%;
+                padding: 0% 0% 0% 5%;
+                text-align: justify;
+                margin: 0%;
+                // background-color: royalblue;
+            }
+        }
+        .OutputGit{
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            height: 70px;
+            width: 70px;
+            background-color: $light_background;
+            color: $light_color;
+            border-radius: 50%;
+        }
+        .OutputGit:hover{
+            animation: git 1s;
+            animation-fill-mode: forwards;
+        }
+    }
+    @keyframes git{
+        to{
+            box-shadow: 0 0 70px $light_color;
+        }
+    }
+    @keyframes glow{
+        to{
+            text-shadow: 0 0 20px #fff, 0 0 30px $light_color, 0 0 40px $light_color, 0 0 50px $light_color, 0 0 60px $light_color, 0 0 70px $light_color, 0 0 80px $light_color;
+        }
+    }
+    @keyframes blur{
+        to{
+            color: $light_background;
+            background-color: $light_color;
+        }
+    }
+}
+
+
+// dark theme
+.dark {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .OutputMain {
+        height: 100vh;
+        background-color: rgba($color: $dark_background, $alpha: 0.5);
+        .OutputPageHeader {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba($color: $dark_background, $alpha: 0);
+            .Icon {
+                color: $dark_color;
+                height: 100%;
+                width: 80px;
+            }
+            .Icon:hover {
+             animation: blurdark 2s;  
+             animation-fill-mode: forwards;         
+            }
+            .logo1 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo2 {
+                height: 10vh;
+                width: 30%;
+            }
+            .logo3 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo4 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $dark_background, $alpha: 1);
+            height: 60%;
+            width: 40%;
+            margin: 10% 10% 0% 10%;
+            font-size: 150%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $dark_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+            h2{
+                color: $dark_color;
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 200%;
+                padding: 0% 0% 0% 3%;
+                margin-left: 0%;
+                margin-right: 0%;
+                margin-bottom: 0%;
+            }
+            h2:hover{
+               animation: glowdark 2s ;
+               animation-fill-mode: forwards;
+            }
+            p{
+                color: $dark_color;
+                font-family: tahoma;
+                width: 90%;
+                font-size: 90%;
+                padding: 0% 0% 0% 5%;
+                text-align: justify;
+                margin: 0%;
+                // background-color: royalblue;
+            }
+        }
+        .OutputGit{
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            height: 70px;
+            width: 70px;
+            background-color: $dark_background;
+            color: $dark_color;
+            border-radius: 50%;
+        }
+        .OutputGit:hover{
+            animation: gitdark 1s;
+            animation-fill-mode: forwards;
+        }
+    }
+    @keyframes gitdark{
+        to{
+            box-shadow: 0 0 70px $dark_color;
+        }
+    }
+    @keyframes glowdark{
+        to{
+            text-shadow: 0 0 20px #fff, 0 0 30px $dark_color, 0 0 40px $dark_color, 0 0 50px $dark_color, 0 0 60px $dark_color, 0 0 70px $dark_color, 0 0 80px $dark_color;
+        }
+    }
+    @keyframes blurdark{
+        to{
+            color: $dark_background;
+            background-color: $dark_color;
+        }
+    }
+}
+
+// purple Theme
+.purple {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .OutputMain {
+        height: 100vh;
+        background-color: rgba($color: $purple_background, $alpha: 0.5);
+        .OutputPageHeader {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba($color: $purple_background, $alpha: 0);
+            .Icon {
+                color: $purple_color;
+                height: 100%;
+                width: 80px;
+            }
+            .Icon:hover {
+             animation: blurpurple 2s;  
+             animation-fill-mode: forwards;         
+            }
+            .logo1 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo2 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo3 {
+                height: 10vh;
+                width: 30%;
+            }
+            .logo4 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $purple_background, $alpha: 1);
+            height: 60%;
+            width: 40%;
+            margin: 10% 10% 0% 10%;
+            font-size: 150%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $purple_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+            h2{
+                color: $purple_color;
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 200%;
+                padding: 0% 0% 0% 3%;
+                margin-left: 0%;
+                margin-right: 0%;
+                margin-bottom: 0%;
+            }
+            h2:hover{
+               animation: glowpurple 2s ;
+               animation-fill-mode: forwards;
+            }
+            p{
+                color: $purple_color;
+                font-family: tahoma;
+                width: 90%;
+                font-size: 90%;
+                padding: 0% 0% 0% 5%;
+                text-align: justify;
+                margin: 0%;
+                // background-color: royalblue;
+            }
+        }
+        .OutputGit{
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            height: 70px;
+            width: 70px;
+            background-color: $purple_background;
+            color: $purple_color;
+            border-radius: 50%;
+        }
+        .OutputGit:hover{
+            animation: gitpurple 1s;
+            animation-fill-mode: forwards;
+        }
+    }
+    @keyframes gitpurple{
+        to{
+            box-shadow: 0 0 70px $purple_color;
+        }
+    }
+    @keyframes glowpurple{
+        to{
+            text-shadow: 0 0 20px #fff, 0 0 30px $purple_color, 0 0 40px $purple_color, 0 0 50px $purple_color, 0 0 60px $purple_color, 0 0 70px $purple_color, 0 0 80px $purple_color;
+        }
+    }
+    @keyframes blurpurple{
+        to{
+            color: $purple_background;
+            background-color: $purple_color;
+        }
+    }
+}
+//green theme
+.green {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .OutputMain {
+        height: 100vh;
+        background-color: rgba($color: $green_background, $alpha: 0.5);
+        .OutputPageHeader {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba($color: $green_background, $alpha: 0);
+            .Icon {
+                color: $green_color;
+                height: 100%;
+                width: 80px;
+            }
+            .Icon:hover {
+             animation: blurgreen 2s;  
+             animation-fill-mode: forwards;         
+            }
+            .logo1 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo2 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo3 {
+                display: none;               
+                height: 10vh;
+                width: 30%;
+            }
+            .logo4 {
+                height: 10vh;
+                width: 30%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $green_background, $alpha: 1);
+            height: 60%;
+            width: 40%;
+            margin: 10% 10% 0% 10%;
+            font-size: 150%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $green_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+            h2{
+                color: $green_color;
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 200%;
+                padding: 0% 0% 0% 3%;
+                margin-left: 0%;
+                margin-right: 0%;
+                margin-bottom: 0%;
+            }
+            h2:hover{
+               animation: glowgreen 2s ;
+               animation-fill-mode: forwards;
+            }
+            p{
+                color: $green_color;
+                font-family: tahoma;
+                width: 90%;
+                font-size: 90%;
+                padding: 0% 0% 0% 5%;
+                text-align: justify;
+                margin: 0%;
+                // background-color: royalblue;
+            }
+        }
+        .OutputGit{
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            height: 70px;
+            width: 70px;
+            background-color: $green_background;
+            color: $green_color;
+            border-radius: 50%;
+        }
+        .OutputGit:hover{
+            animation: gitgreen 1s;
+            animation-fill-mode: forwards;
+        }
+    }
+    @keyframes gitgreen{
+        to{
+            box-shadow: 0 0 70px $green_color;
+        }
+    }
+    @keyframes glowgreen{
+        to{
+            text-shadow: 0 0 20px #fff, 0 0 30px $green_color, 0 0 40px $green_color, 0 0 50px $green_color, 0 0 60px $green_color, 0 0 70px $green_color, 0 0 80px $green_color;
+        }
+    }
+    @keyframes blurgreen{
+        to{
+            color: $green_background;
+            background-color: $green_color;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .light {
+
+    
+    .OutputMain {
+       .OutputPageHeader {
+            
+            .logo1 {
+                height: 10vh;
+                width: 50%;
+            }
+            .logo2 {
+                display: none;
+                height: 10vh;
+                width: 50%;
+            }
+            .logo3 {
+                display: none;
+                height: 10vh;
+                width: 50%;
+            }
+            .logo4 {
+                display: none;
+                height: 10vh;
+                width: 50%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $light_background, $alpha: 1);
+            height: 60%;
+            width: 60%;
+            margin: 20%;
+            font-size: 150%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $light_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+        }
+    }
+}
+
+
+// dark theme
+.dark {
+    .OutputMain {
+        .OutputPageHeader {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba($color: $dark_background, $alpha: 0);
+            
+            .logo1 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo2 {
+                height: 10vh;
+                width: 50%;
+            }
+            .logo3 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo4 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $dark_background, $alpha: 1);
+            height: 60%;
+            width: 60%;
+            margin: 20%;
+            font-size: 150%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $dark_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+        
+
+        }
+    }
+}
+
+// purple Theme
+.purple {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .OutputMain {
+        height: 100vh;
+        background-color: rgba($color: $purple_background, $alpha: 0.5);
+        .OutputPageHeader {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba($color: $purple_background, $alpha: 0);
+            .logo1 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo2 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo3 {
+                height: 10vh;
+                width: 50%;
+            }
+            .logo4 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $purple_background, $alpha: 1);
+            height: 60%;
+            width: 60%;
+            margin: 20%;
+            font-size: 150%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $purple_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+            
+            p{
+                color: $purple_color;
+                font-family: tahoma;
+                width: 90%;
+                font-size: 90%;
+                padding: 0% 0% 0% 5%;
+                text-align: justify;
+                margin: 0%;
+                // background-color: royalblue;
+            }
+        }
+    }
+}
+//green theme
+.green {
+    .OutputMain {
+        .OutputPageHeader {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba($color: $green_background, $alpha: 0);
+            .logo1 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo2 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo3 {
+                display: none;               
+                height: 10vh;
+                width: 30%;
+            }
+            .logo4 {
+                height: 10vh;
+                width: 50%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $green_background, $alpha: 1);
+            height: 60%;
+            width: 60%;
+            margin: 20%;
+            font-size: 150%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $green_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+        }
+    }
+}
+}
+@media only screen and (max-width: 660px) {
+    .light {
+
+    
+    .OutputMain {
+       .OutputPageHeader {
+            
+            .logo1 {
+                height: 10vh;
+                width: 90%;
+            }
+            .logo2 {
+                display: none;
+                height: 10vh;
+                width: 50%;
+            }
+            .logo3 {
+                display: none;
+                height: 10vh;
+                width: 50%;
+            }
+            .logo4 {
+                display: none;
+                height: 10vh;
+                width: 50%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $light_background, $alpha: 1);
+            height: 50%;
+            width: 80%;
+            margin: 10%;
+            font-size: 100%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $light_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+        }
+    }
+}
+
+
+// dark theme
+.dark {
+    .OutputMain {
+        .OutputPageHeader {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba($color: $dark_background, $alpha: 0);
+            
+            .logo1 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo2 {
+                height: 10vh;
+                width: 90%;
+            }
+            .logo3 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo4 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $dark_background, $alpha: 1);
+            height: 50%;
+            width: 80%;
+            margin: 10%;
+            font-size: 150%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $dark_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+        
+
+        }
+    }
+}
+
+// purple Theme
+.purple {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .OutputMain {
+        height: 100vh;
+        background-color: rgba($color: $purple_background, $alpha: 0.5);
+        .OutputPageHeader {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba($color: $purple_background, $alpha: 0);
+            .logo1 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo2 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo3 {
+                height: 10vh;
+                width: 90%;
+            }
+            .logo4 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $purple_background, $alpha: 1);
+            height: 50%;
+            width: 80%;
+            margin: 10%;
+            font-size: 100%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $purple_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+            
+            p{
+                color: $purple_color;
+                font-family: tahoma;
+                width: 90%;
+                font-size: 90%;
+                padding: 0% 0% 0% 5%;
+                text-align: justify;
+                margin: 0%;
+                // background-color: royalblue;
+            }
+        }
+    }
+}
+//green theme
+.green {
+    .OutputMain {
+        .OutputPageHeader {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba($color: $green_background, $alpha: 0);
+            .logo1 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo2 {
+                display: none;
+                height: 10vh;
+                width: 30%;
+            }
+            .logo3 {
+                display: none;               
+                height: 10vh;
+                width: 30%;
+            }
+            .logo4 {
+                height: 10vh;
+                width: 90%;
+            }
+        }
+        .message{
+            background-color: rgba($color: $green_background, $alpha: 1);
+            height: 50%;
+            width: 80%;
+            margin: 10%;
+            font-size: 100%;
+            border-radius: 5%;
+            box-shadow: 0 0 20px $green_color;
+            overflow: overlay;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: flex-start;
+        }
+    }
+}
+}

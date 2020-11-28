@@ -1,0 +1,185 @@
+.Header {
+    height: 10vh;
+    width: 100%;
+    .logo {
+        width: 30%;
+        height: 100%;
+    }
+}
+.InputPageMain {
+    height: 100vh;
+    background-color: white;
+    background-size: 0 0;
+    // opacity: 0;
+    .Poster {
+        flex: 1;
+        margin: 0%;
+        width: 30%;
+        height: auto;
+        max-height: 90vh;
+    }
+    .InputPage {
+        display: flex;
+        flex-direction: row;
+        // align-items: baseline;
+    }
+    .InputPageInfo {
+        flex: 1.5;
+        margin: 0% 5% 0% 5%;
+        color: rgb(59, 58, 58);
+        font-family: Tahoma;
+        font-size: 150%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .Poster2{
+        flex: 1;
+        max-width: 400px;
+        width: 30%;
+        height: auto;
+        max-height: 90vh;
+        border-radius: 50% 0px 0px 50%;
+        box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .message{
+        width: 100%;
+        margin-top: 4%;
+        font-family: Tahoma;
+    }
+    
+    .Radio{
+        margin-top: 4%;
+    }
+    .RadioAlign{
+        margin-top: 4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .Button{
+        margin-top: 4%;
+        border-radius: 30px;
+        color: white;
+        background-color: #3f50b5;
+    }
+    .Button:hover{
+        color: #3f50b5;
+        background-color: white;
+        border: #3f50b5 solid 1px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+.Header {
+    .logo {
+        width: 50%;
+        height: 100%;
+    }
+}
+.InputPageMain {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    .Poster {
+        flex: 1;
+        margin: 0%;
+        width: 30%;
+        height: auto;
+        max-height: 90vh;
+    }
+    .InputPage {
+        display: flex;
+        flex-direction: row;
+        // align-items: baseline;
+    }
+    .InputPageInfo {
+        flex: 1;
+        margin: 0% 5% 0% 5%;
+        color: rgb(59, 58, 58);
+        font-family: Tahoma;
+        font-size: 150%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .Poster2{
+        display: none;
+    }
+    .message{
+        width: 100%;
+        margin-top: 4%;
+    }
+    
+    .Radio{
+        margin-top: 4%;
+    }
+    .RadioAlign{
+        margin-top: 4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .Button{
+        margin-top: 4%;
+        border-radius: 30px;
+    }
+}
+}
+@media only screen and (max-width: 660px) {
+    .Header {
+        text-align: center;
+        .logo {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .InputPageMain {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .Poster {
+            display: none;
+        }
+        .InputPage {
+            display: flex;
+            flex-direction: row;
+            // align-items: baseline;
+        }
+        .InputPageInfo {
+            flex: 1;
+            margin: 0% 5% 0% 5%;
+            color: rgb(59, 58, 58);
+            font-family: Tahoma;
+            font-size: 150%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .Poster2{
+            display: none;
+        }
+        .message{
+            width: 100%;
+            margin-top: 4%;
+        }
+        
+        .Radio{
+            margin-top: 4%;
+        }
+        .RadioAlign{
+            margin-top: 4%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .Button{
+            margin-top: 4%;
+            border-radius: 30px;
+        }
+    }
+    }
