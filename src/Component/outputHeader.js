@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 import {FaArrowLeft} from 'react-icons/fa'
 import '../Sass/OutputPage.scss'
 export default class OutputHeader extends Component {
     render() {
         return (
             <div className='OutputPageHeader'>
-                <FaArrowLeft className='Icon'/>
+               <Link to='/' className='link'> <FaArrowLeft className='Icon'/> </Link>
                 <img
                 className='logo1'
                 src='https://fontmeme.com/permalink/201126/732ed9cc25906027181768c438889418.png'

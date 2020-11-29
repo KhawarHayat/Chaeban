@@ -1,21 +1,23 @@
 import React, { Component } from 'react'
 import { TextField, FormLabel, FormControlLabel, RadioGroup, Radio, Button } from '@material-ui/core'
 import '../Sass/InputPage.scss'
-import {handleDate, handleMessage, handleTheme} from '../Redux/Input/inputAction'
-import Header from './header'
+import { Link } from 'react-router-dom'
+import { handleDate, handleMessage, handleTheme } from '../Redux/Input/inputAction'
+import Header from './Header'
 import { connect } from 'react-redux'
 class InputPage extends Component {
-    onSubmit = () =>{
+    onSubmit = () => {
         console.log(this.props.Input)
     }
     render() {
         return (
-            <div className='InputPageMain' style={{backgroundImage:`url('./Ice.jpg')`}}>
+            <div className='InputPageMain' style={{ backgroundImage: `url('./Ice.jpg')` }}>
                 <Header />
                 <div className='InputPage' >
                     <img
                         className='Poster'
                         src='./IceCream.jpg'
+                        alt='icecreame'
                     />
                     <div className='InputPageInfo'>
                         <h2>Leave a message</h2>
@@ -49,20 +51,22 @@ class InputPage extends Component {
                         <div className='Radio'>
                             <FormLabel>Theme</FormLabel>
                             <RadioGroup className='RadioAlign' value={this.props.Input.theme} onChange={(e) => this.props.handleTheme(e.target.value)}>
-                                <FormControlLabel value="dark" control={<Radio color='primary' />} label="Dark" />
                                 <FormControlLabel value="light" control={<Radio color='primary' />} label="Light" />
+                                <FormControlLabel value="dark" control={<Radio color='primary' />} label="Dark" />
+                                <FormControlLabel value="purple" control={<Radio color='primary' />} label="Purple" />
                                 <FormControlLabel value="green" control={<Radio color='primary' />} label="Green" />
                             </RadioGroup>
                         </div>
                         <center>
-                        <Button onClick={this.onSubmit} className='Button'  color="primary">
-                            Output
-                        </Button>
+                            <Link className='link' to='/output'><Button onClick={this.onSubmit} className='Button' color="primary">
+                                Output
+                        </Button></Link>
                         </center>
                     </div>
                     <img
                         src='./Ice.jpg'
                         className='Poster2'
+                        alt='ice'
                     />
                 </div>
             </div>
@@ -71,15 +75,15 @@ class InputPage extends Component {
 }
 const mapDispatchToProps = dispatch => {
     return {
-      handleDate: (date) => dispatch(handleDate(date)),
-      handleMessage: (message) => dispatch(handleMessage(message)),
-      handleTheme: (theme) => dispatch(handleTheme(theme))
+        handleDate: (date) => dispatch(handleDate(date)),
+        handleMessage: (message) => dispatch(handleMessage(message)),
+        handleTheme: (theme) => dispatch(handleTheme(theme))
     }
-  }
-  const mapStateToProps = state => {
+}
+const mapStateToProps = state => {
     return {
-      Input: state
+        Input: state
     }
-  }
+}
 
-  export default connect(mapStateToProps,mapDispatchToProps)(InputPage)
+export default connect(mapStateToProps, mapDispatchToProps)(InputPage)

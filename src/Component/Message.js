@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import propTypes from 'prop-types';
 
 export default class Message extends Component {
     render() {
@@ -9,4 +10,9 @@ export default class Message extends Component {
             </div>
         )
     }
+}
+
+Message.propTypes={
+    date: propTypes.string,
+    message: propTypes.string
 }

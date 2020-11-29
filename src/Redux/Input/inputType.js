@@ -1,3 +1,6 @@
 export const CHANGE_DATE = 'CHANGE_DATE'
 export const CHANGE_MESSAGE = 'CHANGE_MESSAGE'
 export const CHANGE_THEME = 'CHANGE_THEME'
+export const LOADINGINPUT = 'LOADINGINPUT'
+export const LOADINGOUTPUT = 'LOADINGOUTPUT'
+export const ERROR = 'ERROR'

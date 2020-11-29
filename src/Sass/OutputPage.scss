@@ -34,6 +34,13 @@ $green_background:#3AAFA9;
              animation: blur 2s;  
              animation-fill-mode: forwards;         
             }
+            .link{
+                text-decoration: none;
+                padding: 0%;
+                margin: 0%;
+                height: 100%;
+                width: 80px;
+            }
             .logo1 {
                 height: 10vh;
                 width: 30%;
@@ -151,6 +158,13 @@ $green_background:#3AAFA9;
              animation: blurdark 2s;  
              animation-fill-mode: forwards;         
             }
+            .link{
+                text-decoration: none;
+                padding: 0%;
+                margin: 0%;
+                height: 100%;
+                width: 80px;
+            }
             .logo1 {
                 display: none;
                 height: 10vh;
@@ -266,6 +280,13 @@ $green_background:#3AAFA9;
              animation: blurpurple 2s;  
              animation-fill-mode: forwards;         
             }
+            .link{
+                text-decoration: none;
+                padding: 0%;
+                margin: 0%;
+                height: 100%;
+                width: 80px;
+            }
             .logo1 {
                 display: none;
                 height: 10vh;
@@ -379,6 +400,13 @@ $green_background:#3AAFA9;
             .Icon:hover {
              animation: blurgreen 2s;  
              animation-fill-mode: forwards;         
+            }
+            .link{
+                text-decoration: none;
+                padding: 0%;
+                margin: 0%;
+                height: 100%;
+                width: 80px;
             }
             .logo1 {
                 display: none;
