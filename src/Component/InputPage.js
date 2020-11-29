@@ -3,7 +3,7 @@ import { TextField, FormLabel, FormControlLabel, RadioGroup, Radio, Button } fro
 import '../Sass/InputPage.scss'
 import { Link } from 'react-router-dom'
 import { handleDate, handleMessage, handleTheme } from '../Redux/Input/inputAction'
-import Header from './Header'
+import Header from './header'
 import { connect } from 'react-redux'
 class InputPage extends Component {
     onSubmit = () => {
