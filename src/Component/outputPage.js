@@ -18,7 +18,7 @@ class OutputPage extends PureComponent {
                     />
                     <FaGithub
                         className='OutputGit'
-
+                        onClick={()=> window.open("https://github.com/KhawarHayat/Chaeban", "_blank")}
                     />
                 </div>
             </div>

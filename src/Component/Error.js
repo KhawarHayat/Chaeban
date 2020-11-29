@@ -4,7 +4,7 @@ import '../Sass/Error.scss'
 function Error() {
     return (
         <div className='Error'>
-        <aside><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4424790/Mirror.png" alt="404 Image" />
+        <aside><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4424790/Mirror.png" alt="404" />
         </aside>
         <main>
           <h1>Sorry!</h1>
