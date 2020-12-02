@@ -504,7 +504,10 @@ $green_background:#3AAFA9;
     
     .OutputMain {
        .OutputPageHeader {
-            
+        .Icon {
+            height: 100%;
+            width: 100%;
+        }
             .logo1 {
                 height: 10vh;
                 width: 50%;
@@ -553,7 +556,10 @@ $green_background:#3AAFA9;
             justify-content: flex-start;
             align-items: center;
             background-color: rgba($color: $dark_background, $alpha: 0);
-            
+            .Icon {
+                height: 100%;
+                width: 100%;
+            }
             .logo1 {
                 display: none;
                 height: 10vh;
@@ -609,6 +615,10 @@ $green_background:#3AAFA9;
             justify-content: flex-start;
             align-items: center;
             background-color: rgba($color: $purple_background, $alpha: 0);
+            .Icon {
+                height: 100%;
+                width: 100%;
+            }
             .logo1 {
                 display: none;
                 height: 10vh;
@@ -666,6 +676,10 @@ $green_background:#3AAFA9;
             justify-content: flex-start;
             align-items: center;
             background-color: rgba($color: $green_background, $alpha: 0);
+            .Icon {
+                height: 100%;
+                width: 100%;
+            }
             .logo1 {
                 display: none;
                 height: 10vh;
@@ -709,7 +723,10 @@ $green_background:#3AAFA9;
     
     .OutputMain {
        .OutputPageHeader {
-            
+        .Icon {
+            height: 100%;
+            width: 100%;
+        }
             .logo1 {
                 height: 10vh;
                 width: 90%;
@@ -758,7 +775,10 @@ $green_background:#3AAFA9;
             justify-content: flex-start;
             align-items: center;
             background-color: rgba($color: $dark_background, $alpha: 0);
-            
+            .Icon {
+                height: 100%;
+                width: 100%;
+            }
             .logo1 {
                 display: none;
                 height: 10vh;
@@ -814,6 +834,10 @@ $green_background:#3AAFA9;
             justify-content: flex-start;
             align-items: center;
             background-color: rgba($color: $purple_background, $alpha: 0);
+            .Icon {
+                height: 100%;
+                width: 100%;
+            }
             .logo1 {
                 display: none;
                 height: 10vh;
@@ -871,6 +895,10 @@ $green_background:#3AAFA9;
             justify-content: flex-start;
             align-items: center;
             background-color: rgba($color: $green_background, $alpha: 0);
+            .Icon {
+                height: 100%;
+                width: 100%;
+            }
             .logo1 {
                 display: none;
                 height: 10vh;
